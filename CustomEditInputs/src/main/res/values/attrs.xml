@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomEditTxtInput">
+        <!-- Demo Background Style -->
+        <attr name="inputBox" format="reference" />
+        <attr name="inputFocusBox" format="reference" />
+        <!-- Hint Style -->
+        <attr name="hintText" format="string" />
+        <attr name="hintTextColor" format="color" />
+        <attr name="hintFocusBg" format="color" />
+        <attr name="hintFocusColor" format="color" />
+        <attr name="hintFontFamily" format="reference"/>
+        <attr name="hintSize" format="dimension"/>
+        <attr name="hintFocusSize" format="dimension"/>
+        <attr name="hintDrawable" format="reference"/>
+
+        <!-- Edit Style -->
+        <attr name="editText" format="string" />
+        <attr name="editTextColor" format="color" />
+        <attr name="editFontFamily" format="reference"/>
+        <attr name="editSize" format="dimension"/>
+        <attr name="editDrawable" format="reference"/>
+        <!--Alert Hint Style -->
+        <attr name="alertText" format="string" />
+        <attr name="alertTextColor" format="color" />
+        <attr name="alertFontFamily" format="reference"/>
+        <attr name="alertDrawable" format="dimension"/>
+        <!-- Helper Hint Style -->
+        <attr name="helperText" format="string" />
+        <attr name="helperTextColor" format="color" />
+        <attr name="helperFontFamily" format="reference"/>
+        <attr name="helperDrawable" format="dimension"/>
+        <!-- Direction -->
+        <attr name="isRight" format="boolean"/>
+        <!-- Icons -->
+        <attr name="startIcon" format="reference"/>
+        <attr name="endIcon" format="reference"/>
+    </declare-styleable>
+
+</resources>
