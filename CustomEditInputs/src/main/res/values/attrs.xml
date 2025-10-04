@@ -24,12 +24,12 @@
         <attr name="alertText" format="string" />
         <attr name="alertTextColor" format="color" />
         <attr name="alertFontFamily" format="reference"/>
-        <attr name="alertDrawable" format="dimension"/>
+        <attr name="alertDrawable" format="reference"/>
         <!-- Helper Hint Style -->
         <attr name="helperText" format="string" />
         <attr name="helperTextColor" format="color" />
         <attr name="helperFontFamily" format="reference"/>
-        <attr name="helperDrawable" format="dimension"/>
+        <attr name="helperDrawable" format="reference"/>
         <!-- Direction -->
         <attr name="isRight" format="boolean"/>
         <!-- Icons -->
