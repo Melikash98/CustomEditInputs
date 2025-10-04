@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="CustomEditTxtInput">
+    <declare-styleable name="CustomEditTxtInputs">
         <!-- Demo Background Style -->
         <attr name="inputBox" format="reference" />
         <attr name="inputFocusBox" format="reference" />

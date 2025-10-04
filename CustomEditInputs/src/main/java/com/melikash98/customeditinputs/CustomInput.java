@@ -88,27 +88,27 @@ public class CustomInput extends ConstraintLayout {
 
         // Get attributes
         if (attrs != null) {
-            TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.CustomEditTxtInput);
+            TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.CustomEditTxtInputs);
 
 
             // Edit Style
-            editText.setText(array.getString(R.styleable.CustomEditTxtInput_editText));
-            editColor = array.getColor(R.styleable.CustomEditTxtInput_editTextColor, getResources().getColor(R.color.black));
-            editSize = array.getDimension(R.styleable.CustomEditTxtInput_editSize, 48f);
+            editText.setText(array.getString(R.styleable.CustomEditTxtInputs_editText));
+            editColor = array.getColor(R.styleable.CustomEditTxtInputs_editTextColor, getResources().getColor(R.color.black));
+            editSize = array.getDimension(R.styleable.CustomEditTxtInputs_editSize, 48f);
             editText.setTextSize(TypedValue.COMPLEX_UNIT_PX, editSize);
-            editIcon = array.getDrawable(R.styleable.CustomEditTxtInput_editDrawable);
+            editIcon = array.getDrawable(R.styleable.CustomEditTxtInputs_editDrawable);
 
 
             // Hint Style
-            hint.setText(array.getString(R.styleable.CustomEditTxtInput_hintText));
-            hintColor = array.getColor(R.styleable.CustomEditTxtInput_hintTextColor, getResources().getColor(R.color.dark_gray));
-            hintFocusColor = array.getColor(R.styleable.CustomEditTxtInput_hintFocusColor, getResources().getColor(R.color.black));
-            hintNormalSize = array.getDimension(R.styleable.CustomEditTxtInput_hintSize, editSize - 3);
-            hintFocusSize = array.getDimension(R.styleable.CustomEditTxtInput_hintFocusSize, hintNormalSize);
+            hint.setText(array.getString(R.styleable.CustomEditTxtInputs_hintText));
+            hintColor = array.getColor(R.styleable.CustomEditTxtInputs_hintTextColor, getResources().getColor(R.color.dark_gray));
+            hintFocusColor = array.getColor(R.styleable.CustomEditTxtInputs_hintFocusColor, getResources().getColor(R.color.black));
+            hintNormalSize = array.getDimension(R.styleable.CustomEditTxtInputs_hintSize, editSize - 3);
+            hintFocusSize = array.getDimension(R.styleable.CustomEditTxtInputs_hintFocusSize, hintNormalSize);
             hint.setTextSize(TypedValue.COMPLEX_UNIT_PX, hintNormalSize);
-            hintFocusBgColor = array.getColor(R.styleable.CustomEditTxtInput_hintFocusBg, Color.TRANSPARENT);
-            hintIcon = array.getDrawable(R.styleable.CustomEditTxtInput_hintDrawable);
-            boolean isRight = array.getBoolean(R.styleable.CustomEditTxtInput_isRight, false);
+            hintFocusBgColor = array.getColor(R.styleable.CustomEditTxtInputs_hintFocusBg, Color.TRANSPARENT);
+            hintIcon = array.getDrawable(R.styleable.CustomEditTxtInputs_hintDrawable);
+            boolean isRight = array.getBoolean(R.styleable.CustomEditTxtInputs_isRight, false);
             isDirection = isRight;
 
             if (hintIcon != null) {
@@ -131,7 +131,7 @@ public class CustomInput extends ConstraintLayout {
             }
 
             // => Background Edit Text Style
-            int bgResId = array.getResourceId(R.styleable.CustomEditTxtInput_inputBox, -1);
+            int bgResId = array.getResourceId(R.styleable.CustomEditTxtInputs_inputBox, -1);
             if (bgResId != -1) {
                 normalBg = getResources().getDrawable(bgResId);
                 editText.setBackground(normalBg);
@@ -139,7 +139,7 @@ public class CustomInput extends ConstraintLayout {
                 normalBg = getResources().getDrawable(R.drawable.input_normal);
                 editText.setBackground(normalBg);
             }
-            int bgResId2 = array.getResourceId(R.styleable.CustomEditTxtInput_inputFocusBox, -1);
+            int bgResId2 = array.getResourceId(R.styleable.CustomEditTxtInputs_inputFocusBox, -1);
             if (bgResId2 != -1) {
                 focusBg = getResources().getDrawable(bgResId2);
             } else {
